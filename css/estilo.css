@@ -72,9 +72,9 @@ li .btn,li .btn-contacto{
     background-color: white;
     margin-top: 30px;
     position: relative;
-    max-width: 1260px;
+    /*max-width: 1260px;*/
     width: 100%;
-    height: 70%;
+    height: 100%;
     border-radius: 6px;
     overflow: hidden;
     margin-left: auto;margin-right: auto;
@@ -82,7 +82,7 @@ li .btn,li .btn-contacto{
 
 .slide{
     display: flex;
-    height: 70%;
+    height: 100%;
     transform: translate3d(0,0,0);
     transition: all 600ms;
     animation-name: autoplay;
@@ -237,7 +237,7 @@ h2{
 .categoria-item{
     height: 300px;
     width: 300px;
-    border-radius: 100px;
+    border-radius: 80px;
     border: 2px solid red;
 }
 
@@ -361,19 +361,19 @@ h2{
     }
 
     .logo{
-        width: 100%;
-        height: 100%;
+        width: 60%;
+        height: 60%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1%;
     }
 
     li .btn,li .btn-contacto{
-        height: 100%;
-        border-bottom: 2px solid white;
-        width: 100%;
-        margin-bottom: 1%;
+        border-bottom: 1px solid white;
+        width: 80%;
+        margin-bottom: 0.2%;
         border-left: 2px solid red;
+        font-size: 30px;
     }
 
     .pagination-item{
@@ -393,8 +393,42 @@ h2{
     }
 
     .container-all{
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        height: 100%;
     }
+
+    .item-cat{
+        border-bottom: 2px solid black;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse ;
+        justify-content: center;
+    }
+
+    .categoria-item{
+        height: 250px;
+        width: 300px;
+        margin-bottom:10px;
+        border-radius: 40px;
+    }
+
+    .modal{
+        width: 100%;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .contenido{
+        width:100%;
+    }
+
+    .modal-container{
+        width: 70%;
+    }
+
 }
