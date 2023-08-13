@@ -24,13 +24,14 @@ body:before{
 }
 
 .footer{
-    background-color: rgba(247, 60, 60, 0.664);
+    background-color: rgba(250, 243, 243, 0.664);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
-    justify-content: center;
-    border: 1px solid red;
+    justify-content: flex-start;
+    border: 1px solid black;
     width: 100%;
+    max-width: 300px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom-right-radius: 25px;
@@ -39,7 +40,7 @@ body:before{
 .tabla-productos{
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 80%;
 }
@@ -53,15 +54,54 @@ body:before{
     margin: auto;
 }
 
+.circulo-azul{
+    background-color: blue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    }
+
+.circulo-rojo{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    }
+
+.circulo-verde{
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    }
+
+.circulo-gris{
+    background-color: gainsboro;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    }
+
+.circulo-fucsia{
+    background-color: fuchsia;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    }
+
 button{
     margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: transparent;
     color: black;
     border-style: none;
     font-size: 20px;
-    font-family: 'Georgia';
-    font-weight: bolder;
-    -webkit-text-stroke: 0.5px black;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    /* -webkit-text-stroke: 0.5px black; */
 }
 
 .content img{
@@ -75,8 +115,8 @@ button{
 .link-inicio{
     display: flex;
     justify-content: center;
-    margin-top: 8%;
-    width: 70%;
+    margin-top: 4%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
@@ -87,4 +127,31 @@ button{
     color: red;
     border: 2px solid black;
     border-radius: 6px ;
+}
+
+.contenedor-link{
+    width: 100%;
+}
+
+@media (max-width: 810px) {
+    .tabla-productos{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .card{
+        max-width: 300px;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .link-inicio{
+        min-width: 270px;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .contenedor-link{
+        align-content: center;
+    }
 }
