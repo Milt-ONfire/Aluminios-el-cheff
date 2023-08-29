@@ -104,6 +104,14 @@ button{
     /* -webkit-text-stroke: 0.5px black; */
 }
 
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-top-left-radius: 25px;
+}
+
 .content img{
     border-top-left-radius: 25px;
 }
